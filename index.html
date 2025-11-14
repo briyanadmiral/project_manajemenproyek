@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Bijak & Motivasi Harian | Inspirasi Setiap Hari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="theme-harian">
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">💡 Inspirasi Harian</a></div>
+            <ul class="nav-links">
+                <li><a onclick="changeCategory('harian')" class="active">Harian</a></li>
+                <li><a onclick="changeCategory('cinta')">Cinta</a></li>
+                <li><a onclick="changeCategory('motivasi')">Motivasi</a></li>
+                <li><a onclick="changeCategory('kehidupan')">Kehidupan</a></li>
+                <li><a onclick="changeCategory('sahabat')">Sahabat</a></li>
+                <li><a onclick="changeCategory('mimpi')">Mimpi</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="quote-container">
+            <h1 id="categoryTitle">Kutipan Harian</h1>
+            <p id="quoteText" class="quote-text">Klik tombol "Kutipan Baru" untuk memulai hari Anda dengan inspirasi!</p>
+            <p id="quoteAuthor" class="quote-author"></p>
+            <button id="newQuoteBtn" onclick="displayRandomQuote()">Kutipan Baru</button>
+        </div>
+
+        <!-- Floating Icons -->
+        <div id="floating-elements">
+            <span id="harian-icon-1" class="floating-element hidden">🗓</span>
+            <span id="harian-icon-2" class="floating-element hidden">🌟</span>
+
+            <span id="cinta-icon-1" class="floating-element hidden">❤</span>
+            <span id="cinta-icon-2" class="floating-element hidden">🌹</span>
+
+            <span id="motivasi-icon-1" class="floating-element hidden">🚀</span>
+            <span id="motivasi-icon-2" class="floating-element hidden">💪</span>
+
+            <span id="kehidupan-icon-1" class="floating-element hidden">🌳</span>
+            <span id="kehidupan-icon-2" class="floating-element hidden">🌍</span>
+
+            <span id="sahabat-icon-1" class="floating-element hidden">🤝</span>
+            <span id="sahabat-icon-2" class="floating-element hidden">🤗</span>
+
+            <span id="mimpi-icon-1" class="floating-element hidden">🌌</span>
+            <span id="mimpi-icon-2" class="floating-element hidden">🌠</span>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Website Kata Bijak Harian. Dibuat dengan semangat.
+    </footer>
+
+
+
+</body>
+</html>
